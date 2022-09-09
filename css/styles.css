@@ -1,0 +1,88 @@
+h1, h2, h3 {
+    font-family: "Gloria Hallelujah", "serif";  
+}
+
+button {
+  font-family: "Gloria Hallelujah", "serif";  
+  color: #fff;
+  background-color: #9D47DE;
+  box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 30px;
+  border-radius: 25px;
+  padding: 1em;
+}
+
+header {
+  background-color: #9D47DE;
+  color: #fff;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container > div {
+  width: 100%;
+  margin: 1em;
+  text-align: center;
+}
+
+
+p {
+    font-family: "Short Stack", "sans-serif";
+}
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1em;
+}
+.grid-item {
+  padding: 3em;
+  text-align: center;
+}
+
+
+.blue {
+  background-color: #4B47DE;
+  border-radius: 25px;
+  padding: 2em;
+  color: white;
+}
+
+.violet {
+  background-color: #9D47DE;
+  border-radius: 25px;
+  padding: 2em;
+  color: white;
+}
+
+.lightBlue {
+  background-color: #5078FA;
+  border-radius: 25px;
+  padding: 2em;
+  color: white;
+}
+
+.purple {
+  background-color: #885AF5;
+  border-radius: 25px;
+  padding: 2em;
+  color: white;
+}
+
+.right {
+  float: right;
+}
+
+.aboutMargin {
+  margin: 0em 10em;
+  line-height: 1.5em;
+}
+
+.aboutMargin p {
+  padding: 5em;
+}
