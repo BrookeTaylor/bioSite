@@ -1,51 +1,57 @@
-h1, h2, h3 {
-    font-family: "Gloria Hallelujah", "serif";  
+h1, h2 {
+    font-family: "Gloria Hallelujah", "serif"; 
+}
+
+h1 {
+  font-size: 5em;
 }
 
 button {
-  font-family: "Gloria Hallelujah", "serif";  
+  font-family: "Gloria Hallelujah", "serif";
+  font-size: 1.5em;  
   color: #fff;
   background-color: #9D47DE;
-  box-shadow: rgba(0, 0, 0, 0.35) 10px 10px 30px;
-  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.45) 10px 10px 35px;
+  border-radius: 55px;
   padding: 1em;
 }
 
 header {
   background-color: #9D47DE;
   color: #fff;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-container > div {
   width: 100%;
-  margin: 1em;
-  text-align: center;
 }
-
 
 p {
-    font-family: "Short Stack", "sans-serif";
+  font-family: "Short Stack", "sans-serif";
+}
+
+ol li {
+font-family: "Short Stack", "sans-serif";
+text-align: left;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #adadad;
+}
+
+a:active {
+  color: black;
 }
 
 
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 1em;
-}
-.grid-item {
-  padding: 3em;
-  text-align: center;
-}
-
-
+/* ****** color boxes ****** */
 .blue {
   background-color: #4B47DE;
   border-radius: 25px;
@@ -74,6 +80,41 @@ p {
   color: white;
 }
 
+.interview {
+  background-color: #4B47DE;
+  color: white;
+  border-radius: 135px;
+  padding: 2em;
+}
+/* ****** /color boxes ****** */
+
+
+
+
+
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: .5em;
+}
+.grid-item {
+  padding: .5em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* about page profile pic */
 .right {
   float: right;
 }
@@ -81,8 +122,4 @@ p {
 .aboutMargin {
   margin: 0em 10em;
   line-height: 1.5em;
-}
-
-.aboutMargin p {
-  padding: 5em;
 }
