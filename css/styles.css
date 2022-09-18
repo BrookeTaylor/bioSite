@@ -1,34 +1,15 @@
-h1, h2 {
+h1, h2, h3 {
     font-family: "Gloria Hallelujah", "serif"; 
 }
 
-h1 {
-  font-size: 5em;
-}
-
 button {
-  font-family: "Gloria Hallelujah", "serif";
-  font-size: 1.5em;  
+  font-family: "Gloria Hallelujah", "serif"; 
   color: #fff;
   background-color: #9D47DE;
   box-shadow: rgba(0, 0, 0, 0.45) 10px 10px 35px;
   border-radius: 55px;
-  padding: 1em;
-}
-
-header {
-  background-color: #9D47DE;
-  color: #fff;
-  width: 100%;
-}
-
-p {
-  font-family: "Short Stack", "sans-serif";
-}
-
-ol li {
-font-family: "Short Stack", "sans-serif";
-text-align: left;
+  font-size: 1.25em;
+  padding: .5em;
 }
 
 a:link {
@@ -44,9 +25,111 @@ a:hover {
   color: #adadad;
 }
 
+
 a:active {
   color: black;
 }
+
+p > a:link {
+  text-decoration: underline;
+}
+
+
+
+
+
+/*  ******* header stuff *******  */
+#header {
+  background-color: #9D47DE;
+  padding: 1em;
+  height: 6em;
+}
+
+.title {
+  width: 45%;
+  float: left;
+  text-align: center;
+}
+
+.navButtons {
+  width: 45%;
+  float: right;
+}
+/*  ******* /header stuff *******  */
+
+
+
+
+
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: .5em;
+  clear:both;
+}
+
+p {
+  font-family: "Short Stack", "sans-serif";
+}
+
+/* about page profile pic */
+.right {
+  float: right;
+}
+
+.aboutMargin {
+  margin: 0em 10em;
+  line-height: 1.5em;
+}
+
+
+
+
+
+/*    ************* footer ********   */
+footer {
+  background-color: #9D47DE;
+  color: white;
+  width: 100%;
+  padding: 2em;
+  margin-top: 1em;
+}
+
+footer h3 {
+  width: 45%;
+  float: left;
+  text-align: center;
+}
+
+footer button {
+  margin-left: 15%;
+}
+/*    ************* /footer ********   */
+
+
+
+
+
+/*  ******* about questions lists ******   */
+ol li {
+  font-family: "Short Stack", "sans-serif";
+  text-align: left;
+  }
+  
+.list {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+/*  ******* /about questions lists ******   */
+
 
 
 
@@ -87,39 +170,3 @@ a:active {
   padding: 2em;
 }
 /* ****** /color boxes ****** */
-
-
-
-
-
-
-
-
-
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: .5em;
-}
-.grid-item {
-  padding: .5em;
-  text-align: center;
-}
-
-
-
-
-
-
-
-/* about page profile pic */
-.right {
-  float: right;
-}
-
-.aboutMargin {
-  margin: 0em 10em;
-  line-height: 1.5em;
-}
