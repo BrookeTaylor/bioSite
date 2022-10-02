@@ -1,15 +1,20 @@
-h1, h2, h3 {
-    font-family: "Gloria Hallelujah", "serif"; 
+body {
+  background-color: #f1f1f1;
+  margin: 0%;
 }
 
-button {
+main {
+  margin-top: 15%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+p {
+  font-family: "Short Stack", "sans-serif";
+}
+
+h1, h2 {
   font-family: "Gloria Hallelujah", "serif"; 
-  color: #fff;
-  background-color: #9D47DE;
-  box-shadow: rgba(0, 0, 0, 0.45) 10px 10px 35px;
-  border-radius: 55px;
-  font-size: 1.25em;
-  padding: .5em;
 }
 
 a:link {
@@ -25,92 +30,130 @@ a:hover {
   color: #adadad;
 }
 
-
-a:active {
-  color: black;
-}
-
 p > a:link {
   text-decoration: underline;
 }
 
+button {
+  font-family: "Gloria Hallelujah", "serif"; 
+  color: #fff;
+  background-color: #9D47DE;
+  box-shadow: rgba(0, 0, 0, 0.45) 10px 10px 35px;
+  border-radius: 55px;
+  font-size: 1.25em;
+  padding: .5em;
+  margin-right: .5em;
+}
 
+button:hover {
+  color: #adadad;
+  box-shadow: rgba(0, 0, 0, 0.65) 10px 10px 35px;
+}
+
+button:active {
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+figcaption {
+  color: black;
+}
+
+/* ****** color boxes ****** */
+.blue {
+  background-color: #4B47DE;
+  border-radius: 25px;
+  padding: 2em;
+  color: white;
+}
+.blue:hover{
+  box-shadow: rgba(0, 0, 0, 0.65) 10px 10px 35px;
+}
+
+.violet {
+  background-color: #9D47DE;
+  border-radius: 25px;
+  padding: 2em;
+  color: white;
+}
+.violet:hover{
+  box-shadow: rgba(0, 0, 0, 0.65) 10px 10px 35px;
+}
+
+.lightBlue {
+  background-color: #5078FA;
+  border-radius: 25px;
+  padding: 2em;
+  color: white;
+}
+.lightBlue:hover{
+  box-shadow: rgba(0, 0, 0, 0.65) 10px 10px 35px;
+}
+
+.purple {
+  background-color: #885AF5;
+  border-radius: 25px;
+  padding: 2em;
+  color: white;
+}
+.purple:hover{
+  box-shadow: rgba(0, 0, 0, 0.65) 10px 10px 35px;
+}
+
+/* ****** /color boxes ****** */
+
+
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  color: white;
+  width: 50%;
+  margin: 10px;
+}
 
 
 
 /*  ******* header stuff *******  */
-#header {
+header {
   background-color: #9D47DE;
-  padding: 1em;
-  height: 6em;
+  padding: 3em; 
+  position: absolute;
+  width: 100%;
+  top:0%;
 }
 
-.title {
-  width: 45%;
-  float: left;
-  text-align: center;
+.container {
+  float: right;
+  margin-right: 10%;
+  position: absolute;
+  top: 1em;
+  right: 1em; 
 }
 
 .navButtons {
-  width: 45%;
-  float: right;
+  float:left;
 }
+
+
 /*  ******* /header stuff *******  */
 
 
 
 
-
-main {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: .5em;
-  clear:both;
-}
-
-p {
-  font-family: "Short Stack", "sans-serif";
-}
-
-/* about page profile pic */
-.right {
-  float: right;
-}
-
-.aboutMargin {
-  margin: 0em 10em;
-  line-height: 1.5em;
-}
-
-
-
-
-
-/*    ************* footer ********   */
-footer {
-  background-color: #9D47DE;
+.interview {
+  background-color: #4B47DE;
   color: white;
-  width: 100%;
+  border-radius: 135px;
   padding: 2em;
-  margin-top: 1em;
 }
-
-footer h3 {
-  width: 45%;
-  float: left;
-  text-align: center;
-}
-
-footer button {
-  margin-left: 15%;
-}
-/*    ************* /footer ********   */
-
-
-
-
-
-/*  ******* about questions lists ******   */
 ol li {
   font-family: "Short Stack", "sans-serif";
   text-align: left;
@@ -128,45 +171,40 @@ ol li {
 .right {
   float: right;
 }
-/*  ******* /about questions lists ******   */
 
 
-
-
-
-/* ****** color boxes ****** */
-.blue {
-  background-color: #4B47DE;
-  border-radius: 25px;
-  padding: 2em;
-  color: white;
+.aboutMargin {
+  margin: 15% 10em 5% 10%;
+  line-height: 1.5em;
 }
 
-.violet {
+
+
+
+
+
+
+
+
+
+
+
+/*    ************* footer ********   */
+footer {
   background-color: #9D47DE;
-  border-radius: 25px;
-  padding: 2em;
   color: white;
+  width: 100%;
+  padding: 2em;
+  margin-top: 1em;
 }
 
-.lightBlue {
-  background-color: #5078FA;
-  border-radius: 25px;
-  padding: 2em;
-  color: white;
+footer > h2 {
+  width: 45%;
+  float: left;  
+  margin-left: 15%;
 }
 
-.purple {
-  background-color: #885AF5;
-  border-radius: 25px;
-  padding: 2em;
-  color: white;
-}
 
-.interview {
-  background-color: #4B47DE;
-  color: white;
-  border-radius: 135px;
-  padding: 2em;
-}
-/* ****** /color boxes ****** */
+
+
+/*    ************* /footer ********   */
